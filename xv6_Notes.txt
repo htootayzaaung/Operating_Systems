@@ -1,0 +1,66 @@
+_______________________________________
+Chapter 1 - Operating system interfaces
+_______________________________________
+
+____________________________
+Operating System definition:
+____________________________
+
+********************************************************************************
+A program that acts as an intermediary between a user of a computer and the
+computer hardware.
+********************************************************************************
+
+_An operating system manages and abstracts the low-level hardware, so that, for
+example, a word processor not need concern itself with which type of disk
+hardware it is being used.
+
+_An operating system shares the hardware among multiple programs so that they
+"appear to run" at the same time.
+
+_Operating system provide controlled ways for the program to interact, so that
+they can share data or work together.
+
+_An operating system also provides services to the user programs through an
+interface.
+
+_Designing a good user-interface is difficult. There is a trade-off between
+ensuring the implementation is right and sophisticated features to the
+applications.
+
+Tasks of Operating Systems:
+
+_Process Management
+_Memory Management
+_File Management
+_I/O Management
+_Network Management
+_User and Security Management
+
+______
+Kernel
+______
+
+_"Kernel" is the one-and-only special program in a computer that provides
+services to running programs.
+
+_Each running program, called a process, has memory containing instructions,
+data, and a stack.
+
+_The stack organizes the program's procedural calls.
+
+_When a process needs to invoke a kernel service, it invokes a system call, one
+of the calls in the operating system's interface. The system call enters the
+kernel; kernel performs the service and returns.
+
+_____
+Shell
+_____
+
+_The "shell" is an ordinary program that reads commands from the user and
+executes them.
+
+_Therefore, "shell" acts as an intermediary between the computer and the user.
+
+_The shell is a user program, and not part of the kernel. Thus it is replaceable
+with a variety of options to choose from.
